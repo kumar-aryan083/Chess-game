@@ -75,6 +75,7 @@ export class Game {
       );
       return;
     }
+    // if a player has played a move then tell another player about the move
     if (this.moveCount % 2 === 0) {
       this.player2.send(
         JSON.stringify({
